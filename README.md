@@ -21,9 +21,9 @@ After you open the Matching game web page , you can start playing game which dep
 
 ## Resources
 
-1- Shuffle function from http://stackoverflow.com/a/2450976
-2- timer,resetTimer, and stopTimer functions from https://jsfiddle.net/Daniel_Hug/pvk6p/ with some modifications
-3- The animiation effects from https://jqueryui.com/effect/
+* Shuffle function from http://stackoverflow.com/a/2450976
+* timer,resetTimer, and stopTimer functions from https://jsfiddle.net/Daniel_Hug/pvk6p/ with some modifications
+* The animiation effects from https://jqueryui.com/effect/
 
 
 
