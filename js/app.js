@@ -9,6 +9,7 @@ let count = 0; //count clicked cards
 let matchedCounter =0; //count matched cards 
 let resuem =true; // condition for eventListener
 let moves = 0; // count number of moves
+let start = true; // signal of new start
 const cards = document.getElementsByClassName('card'); // list of cards
 const stars = document.getElementsByClassName('star'); // list of stars
 let stopWatch = document.getElementsByTagName('time')[0]; // for the timer
@@ -37,10 +38,11 @@ function restartGame(){
     resetAll();
     shuffledCards = shuffle(types);
     insertAll();
-    twoCards =[];
+    twoCards =[0,0];
     matchList =[];
     count = 0;
     resuem= true;
+    start = true;
     matchedCounter =0;
     moves =0;
     resetTimer();
@@ -121,9 +123,11 @@ function ON_CLICK(){
          cards[k].classList.add('open', 'show');
          twoCards[0]= k;
          count++;
-         if (moves == 1){
+         if (start){
+            start = false;
             timer();
          }
+         
     }
     else if (count == 1 && k != twoCards[0] ){
         twoCards[1] = k;
@@ -141,7 +145,6 @@ function ON_CLICK(){
 
 }
 }
-
 
 
 //this function will count the number of moves and based on that will decrease the stars 
