@@ -3,8 +3,8 @@
 
 ### Installing
 
-1- Clone the project 
-2- Open the index.html using a web browser
+1- <br /> Clone the project 
+2- <br /> Open the index.html using a web browser
 
 ## How to play?
 
